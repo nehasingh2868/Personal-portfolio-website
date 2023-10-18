@@ -31,6 +31,7 @@ body{
   display: flex;
   font-weight: 800;
   margin-top: -24px;
+  padding-top: 10px;
   /* background-color: #000059; */
 }
 
@@ -85,7 +86,7 @@ li:first-child{
 }
 
 .navitems li a:link {
-  /* color: black; */
+  color: white;
   padding: 10px 10px;
   text-align: center;
 }
