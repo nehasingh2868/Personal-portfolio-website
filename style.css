@@ -1,8 +1,4 @@
 html {
-  background-image: linear-gradient(to right, #000059, #b025a9);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 100%;
   width: 100%;
@@ -12,6 +8,10 @@ body{
   /* overflow: hidden; */
   align-items: center;
   justify-content: center;
+  background-image: linear-gradient(to right, #000059, #b025a9);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 
@@ -46,7 +46,6 @@ b{
 }
 
 .head {
-  background-image: linear-gradient(to right, #000059, #b025a9);
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -54,12 +53,6 @@ b{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  width:100;
-
 }
 
 
@@ -106,19 +99,6 @@ li:first-child{
   
 }
 
-
-/* @media(min-width:701) and (max-width:999){
-  .video-preview-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media(min-width:1000px) {
-  .video-preview-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-} */
-
 .container {
   background-color: transparent;
   color: white;
@@ -128,7 +108,7 @@ li:first-child{
 
 .intro{
   font-size: 20px;
-  
+  text-align: justify;
 }
 
 .maincontent{
@@ -142,53 +122,11 @@ li:first-child{
   flex-wrap: wrap;
 }
 
-.maincontent::before, .skill::before, .project::before{
-  position: absolute;
-  content: '';
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  left: -15%;
-  top: 40%;
-  background: linear-gradient(45deg, pink, rgb(105, 1, 91));
-  animation: object1 6s linear infinite;
-  z-index: -99;
-}
-.maincontent::after, .skill::after, .project::after{
-  position: absolute;
-  content: '';
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  left: 50%;
-  top: 25%;
-  background: linear-gradient(45deg, pink, rgb(95, 1, 83));
-  animation: object2 6s linear infinite;
-  z-index: -99;
-}
-
-@keyframes object1 {
-  50%{
-    left: -13%;
-    top: 41%;
-  }
-}
-@keyframes object2 {
-  50%{
-    left: 50%;
-    top: 20%;
-  }
-}
-.cols0{
-  z-index: -98;
-}
-
 .skill {
   text-align: center;
   color: white;
   overflow: hidden;
   /* margin: 0 300px; */
-  width: 100%;
 }
 
 .project{
@@ -200,8 +138,6 @@ li:first-child{
   color:black;
   gap: 40px;
   margin-top: 40px;
-  
-
 }
 
 .p1,.p2,.p3{
@@ -210,26 +146,26 @@ li:first-child{
   width: 100%;
   max-width: 400px;
   font-size: 20px;
-  transition: transform .2s;
   margin-bottom: 30px;
   border-radius: 20px;
 }
 
 .p1:hover, .p2:hover, .p3:hover{
-  transform: scale(1.1);
+  color: white ;
+  background-color: rgba(255,255,255,0.3);
 }
 
 .skill{
   display: flex;
   flex-direction: row;
   /* margin-right: 40px; */
-  align-items: center;
-  justify-content: space-around;
+  align-items: baseline;
+  justify-content: center;
   width: 100%;
   /* margin-left: 20px; */
   flex-wrap: wrap;
-  gap: 50px;
-  padding: 50px 0;
+  gap: 40px;
+  padding-bottom: 20px;
 }
 
 
@@ -241,11 +177,11 @@ li:first-child{
   color: black;
   padding-top: 10px;
   padding-bottom: 20px ;
-
 }
 
 .skill1:hover, .skill2:hover, .skill3:hover, .skill4:hover, .skill5:hover, .skill6:hover{
-  transform: scale(1.1);
+  color: white ;
+  background-color: rgba(255,255,255,0.3);
 }
 
 .skillImg{
@@ -309,6 +245,7 @@ button {
 .button{
   display: flex;
   justify-content: center ;
+  padding-bottom: 20px;
 }
 
 .btn-1{
