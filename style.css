@@ -53,6 +53,7 @@ b{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  /* overflow: hidden; */
 }
 
 
@@ -93,8 +94,8 @@ li:first-child{
   /* background-color: black; */
 }
 .navitems li a:hover{
-  color: black;
-  background-color: white;
+  color: white;
+  background-image: linear-gradient(to top, rgb(172, 4, 206), rgb(252, 136, 246));
   border-radius: 30px;
   
 }
@@ -104,6 +105,7 @@ li:first-child{
   color: white;
   padding: 15px 10px;
   width :50%;
+  flex-shrink: 0;
 }
 
 .intro{
@@ -118,7 +120,7 @@ li:first-child{
   align-items: center;
   margin-top: 40px;
   padding: 0, 10%;
-  overflow: hidden;
+  /* overflow: hidden; */
   flex-wrap: wrap;
 }
 
@@ -229,6 +231,7 @@ progress::-webkit-progress-value {
   border-radius: 50%;
   border-style:groove;
   border-width: 10px;
+  border-color: #a36ba5;
 }
 
 .image-box{
