@@ -1,0 +1,38 @@
+@media only screen and (max-width: 910px){
+  .navitems{
+    flex-direction: column;
+    /* transition: all 0.7s ease-out; */
+  }
+  .navbar{
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+    height: 280px;
+  }
+  .logo{
+    align-self: center;
+  }
+  .burger{
+    display: block;
+  }
+  .h-nav-resp{
+    height: 60px;
+  }
+  .v-class-resp{
+    opacity:0;
+  }
+  .maincontent{
+    flex-direction: column-reverse;
+  }
+  .container{
+    width: 75%;
+  }
+  .contact-form{
+    width: 75%;
+  }
+  .project{
+    margin: 20px;
+  }
+  .contact{
+    margin: 25px 0;
+  }
+}
