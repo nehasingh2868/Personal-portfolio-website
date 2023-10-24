@@ -19,6 +19,7 @@
   }
   .v-class-resp{
     opacity:0;
+    visibility: hidden;
   }
   .maincontent{
     flex-direction: column-reverse;
@@ -33,6 +34,9 @@
     margin: 20px;
   }
   .contact{
-    margin: 25px 0;
+    margin-bottom: 70px;
+  }
+  .contact-form{
+    padding: 40px 0;
   }
 }

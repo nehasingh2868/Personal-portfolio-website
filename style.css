@@ -254,7 +254,7 @@ button {
 }
 
 .btn-2{
-  margin-left: 10px;
+  margin: 10px 0;
   padding: 10px;
   border: none;
   border-radius: 0px;
@@ -322,7 +322,17 @@ button {
   /* contact me form */
 
   .contact{
-    margin-top: 40px;
+    height: 50%;
+    margin: 40px 0;
+  }
+
+  .contactMe{
+    color: white;
+    border-radius: 10px;
+    margin: 50px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
   }
 
  .contact-form{
